@@ -3,7 +3,9 @@ import axios from "axios";
 import rateLimit from "axios-rate-limit";
 
 //TMDB api key
-export const KEY = "80f9558ee00fbe6653d7ee77b88e6eeb";
+export const KEY = {
+  /* Insert TMDB API KEY */
+};
 
 export default rateLimit(
   axios.create({
