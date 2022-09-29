@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/film-flix/static/css/main.9fcb4ec7.chunk.css",
+    "main.js": "/film-flix/static/js/main.b738b100.chunk.js",
+    "main.js.map": "/film-flix/static/js/main.b738b100.chunk.js.map",
+    "runtime-main.js": "/film-flix/static/js/runtime-main.53b29624.js",
+    "runtime-main.js.map": "/film-flix/static/js/runtime-main.53b29624.js.map",
+    "static/css/2.46a42950.chunk.css": "/film-flix/static/css/2.46a42950.chunk.css",
+    "static/js/2.6d3f3f22.chunk.js": "/film-flix/static/js/2.6d3f3f22.chunk.js",
+    "static/js/2.6d3f3f22.chunk.js.map": "/film-flix/static/js/2.6d3f3f22.chunk.js.map",
+    "index.html": "/film-flix/index.html",
+    "precache-manifest.b622d916b489b5b163676cf81778442a.js": "/film-flix/precache-manifest.b622d916b489b5b163676cf81778442a.js",
+    "service-worker.js": "/film-flix/service-worker.js",
+    "static/css/2.46a42950.chunk.css.map": "/film-flix/static/css/2.46a42950.chunk.css.map",
+    "static/css/main.9fcb4ec7.chunk.css.map": "/film-flix/static/css/main.9fcb4ec7.chunk.css.map",
+    "static/js/2.6d3f3f22.chunk.js.LICENSE.txt": "/film-flix/static/js/2.6d3f3f22.chunk.js.LICENSE.txt",
+    "static/js/main.b738b100.chunk.js.LICENSE.txt": "/film-flix/static/js/main.b738b100.chunk.js.LICENSE.txt",
+    "static/media/cinema.jpg": "/film-flix/static/media/cinema.5f886995.jpg",
+    "static/media/slick-theme.scss": "/film-flix/static/media/slick.f97e3bbf.svg",
+    "static/media/word-logo.png": "/film-flix/static/media/word-logo.55c39d0c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53b29624.js",
+    "static/css/2.46a42950.chunk.css",
+    "static/js/2.6d3f3f22.chunk.js",
+    "static/css/main.9fcb4ec7.chunk.css",
+    "static/js/main.b738b100.chunk.js"
+  ]
+}

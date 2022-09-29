@@ -7,9 +7,7 @@ import history from "../history";
 //action creator
 //Applying redux-thunk to action creator that is async await to request API
 export const fetchMovies = (searchTerm) => async (dispatch) => {
-  const response = await TMDB.get(
-    `/search/multi?api_key=${KEY}&query=${searchTerm}`,
-  );
+  const response = await TMDB.get(`/search/multi?api_key=${KEY}&query=${searchTerm}`);
 
   dispatch({ type: "FETCH_MOVIES", payload: response.data });
   history.push(`/list/search/results/${searchTerm}`);
@@ -66,9 +64,7 @@ export const fetchCredits = (id) => async (dispatch) => {
 
 //action creator
 export const fetchTopRated = () => async (dispatch) => {
-  const response = await TMDB.get(
-    `https://api.themoviedb.org/3/movie/top_rated?api_key=${KEY}&language=en-US&page=1`,
-  );
+  const response = await TMDB.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${KEY}&language=en-US&page=1`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_TOP_RATED", payload: response.data });
@@ -76,9 +72,7 @@ export const fetchTopRated = () => async (dispatch) => {
 
 //action creator
 export const fetchNowPlaying = () => async (dispatch) => {
-  const response = await TMDB.get(
-    `/movie/now_playing?api_key=${KEY}&language=en-US&page=1`,
-  );
+  const response = await TMDB.get(`/movie/now_playing?api_key=${KEY}&language=en-US&page=1`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_NOW_PLAYING", payload: response.data });
@@ -86,9 +80,7 @@ export const fetchNowPlaying = () => async (dispatch) => {
 
 //action creator
 export const fetchPopular = () => async (dispatch) => {
-  const response = await TMDB.get(
-    `/movie/popular?api_key=${KEY}&language=en-US&page=1`,
-  );
+  const response = await TMDB.get(`/movie/popular?api_key=${KEY}&language=en-US&page=1`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_POPULAR", payload: response.data });
@@ -96,9 +88,7 @@ export const fetchPopular = () => async (dispatch) => {
 
 //action creator
 export const fetchTrailers = (id) => async (dispatch) => {
-  const response = await TMDB.get(
-    `/movie/${id}/videos?api_key=${KEY}&language=en-US`,
-  );
+  const response = await TMDB.get(`/movie/${id}/videos?api_key=${KEY}&language=en-US`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_TRAILERS", payload: response.data });
@@ -123,9 +113,7 @@ export const fetchGenres = () => async (dispatch) => {
 
 //action creator
 export const fetchActor = (id) => async (dispatch) => {
-  const response = await TMDB.get(
-    `/person/${id}?api_key=${KEY}&language=en-US`,
-  );
+  const response = await TMDB.get(`/person/${id}?api_key=${KEY}&language=en-US`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_ACTOR", payload: response.data });
@@ -133,9 +121,7 @@ export const fetchActor = (id) => async (dispatch) => {
 
 //action creator
 export const fetchActorMovies = (id) => async (dispatch) => {
-  const response = await TMDB.get(
-    `/person/${id}/movie_credits?api_key=${KEY}&language=en-US`,
-  );
+  const response = await TMDB.get(`/person/${id}/movie_credits?api_key=${KEY}&language=en-US`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_ACTOR_MOVIES", payload: response.data });
@@ -163,9 +149,7 @@ export const fetchTvTopRated = () => async (dispatch) => {
 
 //action creator
 export const fetchTvAiringToday = () => async (dispatch) => {
-  const response = await TMDB.get(
-    `/tv/airing_today?api_key=${KEY}&language=en-US`,
-  );
+  const response = await TMDB.get(`/tv/airing_today?api_key=${KEY}&language=en-US`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_TV_AIRING_TODAY", payload: response.data });
@@ -173,9 +157,7 @@ export const fetchTvAiringToday = () => async (dispatch) => {
 
 //action creator
 export const fetchTvOnAir = () => async (dispatch) => {
-  const response = await TMDB.get(
-    `/tv/on_the_air?api_key=${KEY}&language=en-US`,
-  );
+  const response = await TMDB.get(`/tv/on_the_air?api_key=${KEY}&language=en-US`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_TV_ON_AIR", payload: response.data });
@@ -183,9 +165,7 @@ export const fetchTvOnAir = () => async (dispatch) => {
 
 //action creator
 export const fetchTvTrending = () => async (dispatch) => {
-  const response = await TMDB.get(
-    `/trending/tv/day?api_key=${KEY}&language=en-US`,
-  );
+  const response = await TMDB.get(`/trending/tv/day?api_key=${KEY}&language=en-US`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_TV_TRENDING", payload: response.data });
@@ -201,9 +181,7 @@ export const fetchShowDetails = (id) => async (dispatch) => {
 
 //action creator
 export const fetchShowVideos = (id) => async (dispatch) => {
-  const response = await TMDB.get(
-    `/tv/${id}/videos?api_key=${KEY}&language=en-US`,
-  );
+  const response = await TMDB.get(`/tv/${id}/videos?api_key=${KEY}&language=en-US`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_SHOW_VIDEOS", payload: response.data });
@@ -211,9 +189,7 @@ export const fetchShowVideos = (id) => async (dispatch) => {
 
 //action creator
 export const fetchShowCredits = (id) => async (dispatch) => {
-  const response = await TMDB.get(
-    `tv/${id}/credits?api_key=${KEY}&language=en-US`,
-  );
+  const response = await TMDB.get(`tv/${id}/credits?api_key=${KEY}&language=en-US`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_SHOW_CREDITS", payload: response.data });
@@ -221,9 +197,7 @@ export const fetchShowCredits = (id) => async (dispatch) => {
 
 //action creator
 export const fetchShowSimilar = (id) => async (dispatch) => {
-  const response = await TMDB.get(
-    `/tv/${id}/recommendations?api_key=${KEY}&language=en-US`,
-  );
+  const response = await TMDB.get(`/tv/${id}/recommendations?api_key=${KEY}&language=en-US`);
 
   //dispatches action to matching type reducer
   dispatch({ type: "FETCH_SHOW_SIMILAR", payload: response.data });
@@ -246,11 +220,7 @@ export const createSignInToken = () => async (dispatch, getState) => {
 
   //go to the TMDB website with token to get user approval
   //redirect to TMDB site then redirect back to film flix
-  window.location.replace(
-    `https://www.themoviedb.org/authenticate/${
-      getState().signInToken
-    }?redirect_to=http://192.168.0.13:3000/user/approval`,
-  );
+  window.location.replace(`https://www.themoviedb.org/authenticate/${getState().signInToken}?redirect_to=https://cedrickmonesit.github.io/film-flix/`);
 };
 
 //sign in
@@ -352,9 +322,7 @@ export const fetchFavoriteShows = () => async (dispatch) => {
 };
 
 //add to favorites
-export const postFavorite = (id, media_type, isFavorite) => async (
-  dispatch,
-) => {
+export const postFavorite = (id, media_type, isFavorite) => async (dispatch) => {
   const account = localStorage.getItem("account");
   const session = localStorage.getItem("session");
 

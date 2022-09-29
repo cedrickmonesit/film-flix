@@ -14,16 +14,6 @@ class Favorites extends React.Component {
     this.props.fetchFavoriteShows();
   }
 
-  //this checks if pevious props changed and fetches fetchFavoriteMovies again and rerenders component
-  componentDidUpdate(prevProps) {
-    if (prevProps !== this.props) {
-      //if session still exists fetch favorites
-      //this conditional prevents fetch of favorites when user signes out since the props technically updated to nothing
-      this.props.fetchFavoriteMovies();
-      this.props.fetchFavoriteShows();
-    }
-  }
-
   renderFavorites() {
     return (
       <React.Fragment>

@@ -5,14 +5,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 import "./home.scss";
-import {
-  fetchTrending,
-  fetchUpcoming,
-  fetchTopRated,
-  fetchNowPlaying,
-  fetchPopular,
-  fetchGenres,
-} from "../../actions";
+import { fetchTrending, fetchUpcoming, fetchTopRated, fetchNowPlaying, fetchPopular, fetchGenres } from "../../actions";
 import Carousel from "../carousel/Carousel";
 import ImageCarousel from "../carousel/ImageCarousel";
 import Loader from "../loader/Loader";
@@ -22,10 +15,10 @@ class Home extends React.Component {
   //when Home component mounts it will invoke these action creators that fetch data from TMDB API
   componentDidMount() {
     //movies
+    this.props.fetchNowPlaying();
     this.props.fetchTrending();
     this.props.fetchUpcoming();
     this.props.fetchTopRated();
-    this.props.fetchNowPlaying();
     this.props.fetchPopular();
     this.props.fetchGenres();
     this.props.fetchTopRated();
@@ -39,11 +32,7 @@ class Home extends React.Component {
       <React.Fragment>
         <Loader lazyload={true} />
         <div className="home-container-image-carousel">
-          <ImageCarousel
-            movies={movies.nowPlaying}
-            genres={genres}
-            title="Now Playing"
-          />
+          <ImageCarousel movies={movies.nowPlaying} genres={genres} title="Now Playing" />
         </div>
 
         <div className="home-container-movie-show-buttons">
@@ -79,11 +68,10 @@ class Home extends React.Component {
   }
 
   render() {
-    return (
-      <div className="home-container">
-        {this.renderHome(this.props.movies, this.props.genres)}
-      </div>
-    );
+    if (window.location.href.indexOf("approved") > -1) {
+      window.location.href = "https://cedrickmonesit.github.io/film-flix/#/user/approval";
+    }
+    return <div className="home-container">{this.renderHome(this.props.movies, this.props.genres)}</div>;
   }
 }
 
