@@ -94,7 +94,6 @@ class ShowDetails extends React.Component {
 
   //this method is a callback function from onclick so it must be an arrow function
   onClickAddToFavorites = () => {
-    console.log("Added to favorites");
     const id = this.props.match.params.id;
     //post action creators for favorite tv shows list
     this.props.postFavorite(id, "tv", true);
@@ -115,7 +114,7 @@ class ShowDetails extends React.Component {
             <div className="movie-details-header-info-container">
               <img
                 className="movie-details-poster"
-                src={`http://image.tmdb.org/t/p/w500/${this.props.show.poster_path}`}
+                src={`https://image.tmdb.org/t/p/w500/${this.props.show.poster_path}`}
                 alt={this.props.show.name}
               />
               <div className="movie-details-title">

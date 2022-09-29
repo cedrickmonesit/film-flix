@@ -46,17 +46,16 @@ Enjoy!
 
 ## Built With
 
-* [React](https://reactjs.org/) - JavaScript framework
-* [Redux](https://redux.js.org/) - State Management
-* [SASS](https://sass-lang.com/) - CSS Pre-Processor
-* [TMDB](https://www.themoviedb.org/) - The Movie Database API
-* [Axios](https://github.com/axios/axios) - Node Module
-
+- [React](https://reactjs.org/) - JavaScript framework
+- [Redux](https://redux.js.org/) - State Management
+- [SASS](https://sass-lang.com/) - CSS Pre-Processor
+- [TMDB](https://www.themoviedb.org/) - The Movie Database API
+- [Axios](https://github.com/axios/axios) - HTTP requests Javascript library
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Language
 
 ## Contributors
 
-* **Cedrick Monesit** - *Initial work* - [cedrickmonesit](http://www.cedrickmonesit.xyz/)
-
+- **Cedrick Monesit** - _Initial work_ - [cedrickmonesit.io](https://cedrickmonesit.github.io/Portfolio.github.io/)
 
 ## License
 
@@ -64,4 +63,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Acknowledgments
 
-* [WOW.js](https://mynameismatthieu.com/WOW/) - TScrolling animation
+- [WOW.js](https://mynameismatthieu.com/WOW/) - TScrolling animation

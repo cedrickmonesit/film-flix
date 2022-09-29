@@ -17,7 +17,7 @@ class ImageCarousel extends React.Component {
             <div
               className="img-slide-image"
               style={{
-                background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://image.tmdb.org/t/p/original/${movie.backdrop_path}) center/cover no-repeat border-box, rgb(255, 255, 255)`,
+                background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://image.tmdb.org/t/p/original/${movie.backdrop_path}) center/cover no-repeat border-box, rgb(255, 255, 255)`,
               }}
             >
               <div className="img-slide-details">
@@ -44,7 +44,7 @@ class ImageCarousel extends React.Component {
             <div
               className="img-slide-image"
               style={{
-                background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://image.tmdb.org/t/p/original/${show.backdrop_path}) center/cover no-repeat border-box, rgb(255, 255, 255)`,
+                background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://image.tmdb.org/t/p/original/${show.backdrop_path}) center/cover no-repeat border-box, rgb(255, 255, 255)`,
               }}
             >
               <div className="img-slide-details">

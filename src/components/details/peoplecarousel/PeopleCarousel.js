@@ -10,14 +10,14 @@ class PeopleCarousel extends React.Component {
   mapMovies() {
     if (this.props.credits) {
       //loops through movies foreach movie returns jsx
-      return this.props.credits.map(person => {
+      return this.props.credits.map((person) => {
         if (person.profile_path) {
           return (
             <div key={person.id} className="slide">
               <Link to={`/details/actor/${person.id}`}>
                 <img
                   className="slide-image"
-                  src={`http://image.tmdb.org/t/p/w500/${person.profile_path}`}
+                  src={`https://image.tmdb.org/t/p/w500/${person.profile_path}`}
                   alt={person.name}
                 />
                 <div className="slide-title">

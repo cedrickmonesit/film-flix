@@ -13,7 +13,7 @@ class MovieShowCarousel extends React.Component {
       return (
         <div className="slide-movie-rating">
           <FaStar className="carousel-star-rating" />
-          <p>{movie.vote_average}</p>
+          <p>{Math.round(parseFloat(movie.vote_average) * 10) / 10}</p>
         </div>
       );
     }
@@ -29,11 +29,7 @@ class MovieShowCarousel extends React.Component {
           <div key={movie.id} className="slide">
             <Link to={`/details/movie/${movie.id}`}>
               <div className="carousel-image-container">
-                <img
-                  className="slide-image"
-                  src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                  alt={movie.title}
-                />
+                <img className="slide-image" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
                 {this.renderRating(movie)}
               </div>
 
@@ -56,11 +52,8 @@ class MovieShowCarousel extends React.Component {
           <div key={show.id} className="slide">
             <Link to={`/details/show/${show.id}`}>
               <div className="carousel-image-container">
-                <img
-                  className="slide-image"
-                  src={`http://image.tmdb.org/t/p/w500/${show.poster_path}`}
-                  alt={show.name}
-                />
+                -
+                <img className="slide-image" src={`https://image.tmdb.org/t/p/w500/${show.poster_path}`} alt={show.name} />
                 {this.renderRating(show)}
               </div>
 

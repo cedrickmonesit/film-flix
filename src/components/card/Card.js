@@ -22,11 +22,14 @@ class Card extends React.Component {
 
   //handle target element for event bubbling
   handleCardClickEvent = (event, id, type) => {
+    console.log(id);
     if (event.target.classList.contains("card-delete-btn-cover")) {
       if (type === "tv" || this.props.type === "shows") {
         this.props.postFavorite(id, "tv", false);
+        document.getElementById(id).style.display = "none";
       } else {
         this.props.postFavorite(id, "movie", false);
+        document.getElementById(id).style.display = "none";
       }
     } else if (type === "tv" || this.props.type === "shows") {
       history.push(`/details/show/${id}`);
@@ -45,20 +48,17 @@ class Card extends React.Component {
             return (
               <div
                 key={item.id}
+                id={item.id}
                 className="movie-card"
                 onClickCapture={(e) => {
                   this.handleCardClickEvent(e, item.id, item.media_type);
                 }}
               >
                 <div className="movie-card-image-container">
-                  <img
-                    className="movie-card-image"
-                    src={`http://image.tmdb.org/t/p/w500/${item.poster_path}`}
-                    alt={item.title}
-                  />
+                  <img className="movie-card-image" src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`} alt={item.title} />
                   <div className="movie-card-rating ">
                     <FaStar className="movie-card-star-rating" />
-                    <p>{item.vote_average}</p>
+                    <p>{Math.round(parseFloat(item.vote_average) * 10) / 10}</p>
                   </div>
                   {this.isDeletable(this.props.isDeletable)}
                 </div>
@@ -71,20 +71,17 @@ class Card extends React.Component {
           return (
             <div
               key={item.id}
+              id={item.id}
               className="movie-card"
               onClickCapture={(e) => {
                 this.handleCardClickEvent(e, item.id);
               }}
             >
               <div className="movie-card-image-container">
-                <img
-                  className="movie-card-image"
-                  src={`http://image.tmdb.org/t/p/w500/${item.poster_path}`}
-                  alt={item.title}
-                />
+                <img className="movie-card-image" src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`} alt={item.title} />
                 <div className="movie-card-rating ">
                   <FaStar className="movie-card-star-rating" />
-                  <p>{item.vote_average}</p>
+                  <p>{Math.round(parseFloat(item.vote_average) * 10) / 10}</p>
                 </div>
                 {this.isDeletable(this.props.isDeletable)}
               </div>
@@ -108,4 +105,6 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { postFavorite })(Card);
+export default connect(mapStateToProps, {
+  postFavorite,
+})(Card);

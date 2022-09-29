@@ -82,7 +82,7 @@ class ActorDetails extends React.Component {
           <div className="actor-details-header-info-container">
             <img
               className="actor-details-poster"
-              src={`http://image.tmdb.org/t/p/w500/${this.props.actor.profile_path}`}
+              src={`https://image.tmdb.org/t/p/w500/${this.props.actor.profile_path}`}
               alt={this.props.actor.title}
             />
             <div className="actor-details-title">

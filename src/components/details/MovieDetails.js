@@ -113,7 +113,7 @@ class MovieDetails extends React.Component {
             <div className="movie-details-header-info-container">
               <img
                 className="movie-details-poster"
-                src={`http://image.tmdb.org/t/p/w500/${this.props.movie.poster_path}`}
+                src={`https://image.tmdb.org/t/p/w500/${this.props.movie.poster_path}`}
                 alt={this.props.movie.title}
               />
               <div className="movie-details-title">

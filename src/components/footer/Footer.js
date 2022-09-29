@@ -31,55 +31,36 @@ const Footer = () => {
           </nav>
         </header>
         <p className="main-footer-item">
-          portfolio: <a href="/">cedrickmonesit.xyz</a>
+          portfolio:
+          <a href="https://cedrickmonesit.github.io/Portfolio.github.io/" rel="noopener noreferrer" target="_blank">
+            cedrickmonesit.io
+          </a>
         </p>
         <p className="main-footer-item">
           phone number: <a href="tel: 508-494-4306">508-494-4306</a>
         </p>
         <p className="main-footer-top-copyright">
-          Copyright @2020 <br />
+          Copyright @2022 <br />
           Code and design by
-          <a
-            className="main-footer-copyright-name"
-            href="https://github.com/cedrickmonesit"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <a className="main-footer-copyright-name" href="https://github.com/cedrickmonesit" rel="noopener noreferrer" target="_blank">
             Cedrick Monesit
           </a>
         </p>
       </section>
       <section className="main-footer-bottom">
         <div className="main-footer-bottom-logo">
-          <a
-            href="https://www.themoviedb.org/"
-            alt="TMDB anchor tag"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <a href="https://www.themoviedb.org/" alt="TMDB anchor tag" rel="noopener noreferrer" target="_blank">
             <img className="main-footer-tmdb-logo" src={TMDB} alt="TMDB Logo" />
           </a>
         </div>
         <div className="main-footer-bottom-social-icons">
-          <a
-            href="https://www.facebook.com/princejohn.monesit"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <a href="https://www.facebook.com/princejohn.monesit" rel="noopener noreferrer" target="_blank">
             <FaFacebookSquare className="main-footer-social-icon" />
           </a>
-          <a
-            href="https://www.instagram.com/cedrickmonesit/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/cedrickmonesit/" rel="noopener noreferrer" target="_blank">
             <FaInstagram className="main-footer-social-icon" />
           </a>
-          <a
-            href="https://github.com/cedrickmonesit"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <a href="https://github.com/cedrickmonesit" rel="noopener noreferrer" target="_blank">
             <FaGithubSquare className="main-footer-social-icon" />
           </a>
         </div>

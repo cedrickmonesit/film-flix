@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Navigation from "./navigation/Navigation";
 import SearchResults from "./searchresults/SearchResults";
@@ -20,7 +20,7 @@ const App = () => {
   //navigation is using history.push and Link tags to show components
   //anything outside of the switch will not be changed on the one page app
   return (
-    <Router history={history}>
+    <HashRouter history={history}>
       <Navigation />
       <div className="main">
         <Switch>
@@ -41,7 +41,7 @@ const App = () => {
         </Switch>
       </div>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 };
 
