@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/film-flix/precache-manifest.6ea6e8b8197c00f8e6a52ab5397f8b2d.js"
+  "/film-flix/precache-manifest.b406814cb40e1497942e0db192eff128.js"
 );
 
 self.addEventListener('message', (event) => {
