@@ -54,6 +54,9 @@ Enjoy!
 - [Axios](https://github.com/axios/axios) - HTTP requests Javascript library
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Language
 
+## Deployment
+- Github Pages
+
 ## Contributors
 
 - **Cedrick Monesit** - _Initial work_ - [cedrickmonesit.io](https://cedrickmonesit.github.io/Portfolio.github.io/)
