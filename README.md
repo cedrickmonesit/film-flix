@@ -48,6 +48,7 @@ Enjoy!
 
 - [React](https://reactjs.org/) - JavaScript framework
 - [Redux](https://redux.js.org/) - State Management
+- [Router](https://reactrouter.com/en/main) - Enables "client side routing"
 - [SASS](https://sass-lang.com/) - CSS Pre-Processor
 - [TMDB](https://www.themoviedb.org/) - The Movie Database API
 - [Axios](https://github.com/axios/axios) - HTTP requests Javascript library
