@@ -55,7 +55,7 @@ Enjoy!
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Language
 
 ## Deployment
-- Github Pages
+- [Github Pages](https://pages.github.com/) - Host
 
 ## Contributors
 
