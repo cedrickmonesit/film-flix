@@ -54,12 +54,6 @@ const Footer = () => {
           </a>
         </div>
         <div className="main-footer-bottom-social-icons">
-          <a href="https://www.facebook.com/princejohn.monesit" rel="noopener noreferrer" target="_blank">
-            <FaFacebookSquare className="main-footer-social-icon" />
-          </a>
-          <a href="https://www.instagram.com/cedrickmonesit/" rel="noopener noreferrer" target="_blank">
-            <FaInstagram className="main-footer-social-icon" />
-          </a>
           <a href="https://github.com/cedrickmonesit" rel="noopener noreferrer" target="_blank">
             <FaGithubSquare className="main-footer-social-icon" />
           </a>
